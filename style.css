@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* core styles */
+
+body {
+    background-color: #0e0e0e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.around {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* main section */
+
+.container {
+    max-width: 1370px;
+    margin: auto;
+    background-color: #181716;
+    position: relative;
+}
+
+.main-section-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.main-section-nav {
+    position: fixed;
+    top: 20px;
+    padding: 30px 0;
+    height: 40px;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid #dac5a7;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.main-section-logo img {
+    width: 110px;
+    padding-left: 40px;
+}
+
+.main-section-nav ul {
+    list-style: none;
+}
+
+.main-section-nav a {
+    text-decoration: none;
+}
+
+.main-section-nav ul li {
+    padding-left: 40px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #dac5a7;
+}
+
+.main-section-nav button {
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    background-color: #DAC5A7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-section-descrption {
+    position: absolute;
+    top: 500px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+
+.main-section-descrption h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 128px;
+    font-weight: 200;
+    color: #dac5a7;
+    line-height: 141px;
+    text-align: center;
+}
+
+.main-section-descrption p {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #dac5a7;
+    text-align: center;
+}
+
+.main-section-button {
+    display: block;
+    text-align: center;
+}
+
+.main-section-descrption button {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #dac5a7;
+    outline: none;
+    background-color: #181716;
+    color: #dac5a7;
+}
+
+.marque-logos {
+    margin-top: 60px;
+}
+
+.marque-logos marquee {
+    width: 1200px;
+}
+
+.marque-logos img {
+    width: 100px;
+    padding-left: 40px;
+}
+
+/* End main seection */
+
+/* Cards */
+
+.card-section {
+    position: absolute;
+    top: 1000px;
+    color: white;
+}
+
+.cards {
+    width: 30%;
+    height: 330px;
+    text-align: left;
+    background-color: #181716;
+    padding: 50px 50px;
+    outline: 1px #dac5a7 solid;
+    border-radius: 5px;
+}
+
+.cards span {
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 16px;
+    color: #dac5a799;
+}
+
+.cards h1 {
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300px;
+    line-height: 31px;
+    color: #dac5a799;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.cards p {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400px;
+    line-height: 26px;
+    color: #dac5a799;
+}
+
+.cards-descrptiom {
+    height: 150px;
+}
+
+.card-about-button {
+    margin-top: 10px;
+}
+
+.card-about-button button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #dac5a7;
+    background-color: #181716;
+    border: 1px solid #dac5a7;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.card-about-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* End card section */
+
+/* Product section */
+.product-section {
+    position: absolute;
+    top: 1500px;
+    z-index: 999;
+}
+
+.product-image {
+    color: white;
+    z-index: 1000;
+}
+
+.product-image-pos {
+    position: relative;
+    padding-left: 40px;
+}
+
+
+.product-image-pos img {
+    margin-bottom: 40px;
+    width: 600px;
+    height: 400px;
+    border: 1px solid #dac5a7;
+    outline: none;
+    position: relative;
+}
+.product-image-pos .product-image-des {
+    position: absolute;
+    top: 330px;
+    left: 70px;
+}
+
+.product-image-des {
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #dac5a7;
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-des h1 {
+    padding-right: 250px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #dac5a7;
+}
+
+.product-image-des h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #dac5a7;
+}
+
+/* Five steps-section */
+
+.five-steps-section {
+    position: absolute;
+    top: 2400px;
+    color: white;
+}
+
+.five-steps-section .five-steps-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #dac5a7;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+.five-steps-section-title h1 {
+    font-family: "Dosis", sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 106px;
+    color: #dac5a7;
+    text-align: center;
+}
+
+.five-steps-section-title p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #dac5a7;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.five-steps-section-coloumn {
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.five-steps-section-coloumn-card {
+    width: 45%;
+    height: 360px;
+    background-color: #181716;
+    padding: 30px 30px;
+    margin: 40px auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.five-steps-section-coloumn-card span{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #dac5a7;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.five-steps-section-coloumn-card h1{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #dac5a7;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+.five-steps-section-coloumn-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #dac5a7;
+    padding-bottom: 20px;
+}
+
+.five-steps-section-coloumn-card ul {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #dac5a7;
+    padding-left: 18px;
+    line-height: 30px;
+}
+
+.two-hours {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: 1px solid #dac5a7;
+    padding: 5px;
+    background-color: #22201e;
+}
+
+/* End five stepsection */
+
+/* Clients review */
+
+.cliens-review {
+    position: absolute;
+    top: 4200px;
+}
+
+.cliens-review-section-title .cliens-review-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #dac5a7;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+.cliens-review-section-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 106px;
+    color: #dac5a7;
+    text-align: center;
+}
+
+.cliens-review-section-title p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #dac5a7;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.clients-review-coloumn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-review-card img {
+    width: 50px;
+}
+
+.clients-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.clients-review-card {
+    width: 570px;
+    height: 380px;
+    background-color: #181716;
+    padding: 30px 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.clients-review-card span{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #dac5a7;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.clients-review-card h1{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #dac5a7;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+.clients-review-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #dac5a7;
+    padding-bottom: 20px;
+}
+
+.lower {
+    width: 570px;
+    height: 430px;
+    margin-top: -5px;
+}
+
+.lower .clients-image {
+    padding-top: 30px;
+} 
+
+.clients-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.clients-image p {
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 15px;
+    vertical-align: middle;
+}
+
+/* End clients section */
+
+.iam {
+    position: absolute;
+    top: 6000px;
+    color: white;
+    width: 100%;
+}
+
+.iam-div {
+    position: relative;
+}
+
+.iam-image img {
+    padding: 0 30px;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.iam-section-description {
+    position: absolute;
+    width: 95%;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    color: white;
+    margin: 0 auto;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.iam-section-description .title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #dac5a7;
+    text-align: left;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #dac5a7;
+    width: 50%;
+    text-align: left;
+}
+
+.hi-iam-section-media-logos {
+    padding-top: 20px;
+
+}
+
+.hi-iam-section-media-logos a {
+    text-decoration: none;
+    color: #dac5a7;
+}
+
+.hi-iam-section-media-logos i {
+    border: 1px solid #dac5a7;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+/* End hi i am section */
+
+/* Footer section */
+
+.footer-section {
+    position: absolute;
+    top: 7300px;
+    color: white;
+    width: 100%;
+}
+
+.footer-title {
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer-title span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #dac5a7;
+}
+
+.footer-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 128px;
+    font-weight: 300;
+    line-height: 141px;
+    text-transform: uppercase;
+    color: #dac5a7;
+}
+
+.footer-title p {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #dac5a7;
+    padding-top: 30px;
+}
+
+.footer-title button {
+    padding: 10px 20px;
+    background-color: #dac5a7;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-button{
+    margin-top: 40px;
+}
+
+.footer-title button i {
+    font-size: 25px;
+}
+
+.footer-info {
+    margin: 50px 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.footer-info-logo i {
+    border: 1px solid #dac5a7;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.footer-info h1 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: start;
+    color: #dac5a7;
+    padding-bottom: 30px;
+}
+
+.footer-info ul {
+    list-style: none;
+    text-align: start;
+    line-height: 40px;
+}
+
+.footer-info ul a {
+    text-decoration: none;
+    color: #8d7f65;
+    text-transform: uppercase;
+}
+
+.footer-info ul a:hover {
+    color: #dac5a7;
+}
+
+.footer-info-logo img {
+    margin-left: 50px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.footer-info-utilty {
+    margin-right: 50px;
+}
+
+/* End footer section */
